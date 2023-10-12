@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Сайт з вкладками і слайдером</title>
+</head>
+<body>
+    <div class="tabs">
+        <button class="tab-button active" id="tab1Button">Вкладка 1</button>
+        <button class="tab-button" id="tab2Button">Вкладка 2</button>
+    </div>
+    <div class="tab-content" id="tab1">
+        <div class="swiper-container" id="swiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Слайд 1</div>
+                <div class="swiper-slide">Слайд 2</div>
+                <div class="swiper-slide">Слайд 3</div>
+                </div>
+                <div class="swiper-button-next" id="next1"></div>
+                <div class="swiper-button-prev" id="prev1"></div>
+        </div>
+    </div>
+    <div class="tab-content" id="tab2">
+        <div class="swiper-container" id="swiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Слайд 4</div>
+                <div class="swiper-slide">Слайд 5</div>
+                <div class="swiper-slide">Слайд 6</div>
+            </div>
+            <div class="swiper-pagination" id="pagination2"></div>
+            <div class="swiper-button-next" id="next2"></div>
+            <div class="swiper-button-prev" id="prev2"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- створи три блока в html. Перший блок буде 960px в ширину та 300px в висоту, по замовченю в першому блоці такі стилі та клас .gdai-two-buttons-background-blue{
+    border-radius: 12px;
+    background: linear-gradient(180deg, #1B78F9 0%, #1B78F9 23.4%, rgba(27, 120, 249, 0.42) 40.18%, rgba(27, 120, 249, 0.18) 52.45%, rgba(27, 120, 249, 0.00) 61.17%);
+} в першому блоці буде дві кнопки в кожної буде два стана "активна" та "пасивна". В активному стані у першої кнопки  та такий стиль  {border-radius: 10px;
+    background: #75B336;
+    width: 176px;
+    height: 70px;
+    transition:  0.4s ease;} а коли вона пасивна то такий стиль {border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.80);
+    width: 176px;
+    height: 70px;
+    transition:  0.3s ease;} в другої кнопки в активному стані такий стиль {
+    border-radius: 10px;
+    background: #1B78F9;
+    width: 176px;
+    height: 70px;
+    transition:  0.4s ease;
+} а в пасивнопу такий самий як і у першої. Коли активна перша кнопка то до першого блоку застосовується такий стиль {
+    border-radius: 12px;
+    background: linear-gradient(180deg, #1B78F9 0%, #1B78F9 23.4%, rgba(27, 120, 249, 0.42) 40.18%, rgba(27, 120, 249, 0.18) 52.45%, rgba(27, 120, 249, 0.00) 61.17%);
+} а коли активна друга кнопка то цей стиль видаляється та застосовується цей стиль {
+    border-radius: 12px;
+    background: linear-gradient(180deg, #75B336 0%, #75B336 23.4%, rgba(117, 179, 54, 0.42) 40.18%, rgba(117, 179, 54, 0.18) 52.45%, rgba(117, 179, 54, 0.00) 61.17%);
+}. 
+В другому блоці буде контейнер в середині якого два горизонтальний слайдера зроблені задопомогою свайпера. Коли активна перша кнопка то активний перший слайдер а другий прихований, коли активна друга кнопка то перший слайдер прихований а другий активний. Ширина слайдера 1075px а висота 430px. В кожному слайдері по 6 слайдів.
+В третьому блоці знаходяться кнопки слайдера вони розміщені кнопка "next" вертикально по середині слайдера і 10px вправо від кінця а кнопка "prev" вертикально по середині слайдера і 10px в ліво від початку слайдера -->
